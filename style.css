@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.nav-link {
+  font-family: "Epilogue", sans-serif;
+  color: hsl(0, 0%, 41%);
+}
+.links:hover img {
+  display: none !important;
+}
+
+.links:hover::after {
+  content: url(images/icon-arrow-up.svg) !important;
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+}
+.nav-link:hover {
+  color: hsl(0, 0%, 8%);
+  font-weight: 500 !important;
+}
+.dropdown-item {
+  color: hsl(0, 0%, 41%) !important;
+  font-family: "Epilogue", sans-serif !important;
+  font-size: 14px !important;
+}
+.dropdown-item span {
+  padding-left: 10px !important;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+.navbar-nav {
+  flex-direction: row !important;
+}
+.nav-link {
+  display: inline;
+}
+.navbar-nav .dropdown-menu {
+  position: fixed;
+}
+.nav-link {
+  padding-right: 35px !important;
+}
+.navbar-brand {
+  padding-right: 45px !important;
+}
+.dropdown-menu {
+  min-width: 100px;
+}
+.content {
+  width: calc(100% - 150px) !important;
+}
+
+.button {
+  border: 2px solid hsl(0, 0%, 41%) !important;
+  border-radius: 12px;
+  padding: 5px 5px;
+}
+.button:hover {
+  border: 2px solid hsl(0, 0%, 8%) !important;
+  color: hsl(0, 0%, 8%) !important;
+}
+.register-btn {
+  padding: 6px 12px !important;
+}
+.main {
+  max-width: 100vw;
+}
+picture {
+  width: max-content !important;
+}
+picture img {
+  width: 430px !important;
+}
+.main-con h1 {
+  font-family: "Epilogue", sans-serif !important;
+  color: hsl(0, 0%, 8%);
+  font-weight: 700 !important;
+  padding-top: 70px;
+}
+.main-con {
+  max-width: 450px !important;
+}
+.main-con p {
+  font-family: "Epilogue", sans-serif !important;
+  color: hsl(0, 0%, 41%) !important;
+  font-weight: 500 !important;
+}
+.learn-btn {
+  font-family: "Epilogue", sans-serif !important;
+  color: hsl(0, 0%, 98%);
+  font-size: 15px !important;
+  border-radius: 12px;
+  padding: 10px 24px;
+}
+.learn-btn:hover {
+  border: 1px solid hsl(0, 0%, 8%) !important;
+  color: hsl(0, 0%, 8%) !important;
+  background-color: #fff !important;
+  font-weight: 700 !important;
+}
+.logos img {
+  width: 75px;
+}
+.logos img:first-child {
+  width: 90px;
+}
+.logos img:nth-child(2) {
+  width: 65px;
+}
+.navbar-toggler {
+  border: none !important;
+}
+@media (min-width: 992px) {
+  .logos {
+    margin-top: 100px !important;
+  }
+  .offcanvas {
+    flex-direction: row !important;
+  }
+}
+@media (max-width: 992px) {
+  .main {
+    flex-direction: column-reverse !important;
+    --bs-gutter-x: 0rem;
+  }
+  picture img {
+    max-width: 375px !important;
+  }
+  .main-con {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .logos img {
+    width: 60px;
+  }
+  .logos img:first-child {
+    width: 75px;
+  }
+  .logos img:nth-child(2) {
+    width: 55px;
+  }
+  .logos img:last-child {
+    margin-right: 0 !important;
+  }
+  picture {
+    margin: 0 auto;
+  }
+  #navbarSupportedContent {
+    justify-content: start !important;
+  }
+  .navbar-start {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .offcanvas {
+    display: block;
+  }
+  .offcanvas-header {
+    justify-content: end;
+  }
+  .nav-link {
+    margin-top: 8px !important;
+    margin-left: 20px !important;
+    display: inline-block !important;
+    padding-right: 0 !important;
+  }
+  .navbar-nav .dropdown-menu {
+    position: static !important;
+  }
+  .dropdown-menu:hover {
+    display: none !important;
+  }
+  .nav-link {
+    font-size: 17px !important;
+  }
+  .dropdown-item {
+    font-size: 17px !important;
+  }
+  .register-btn {
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 16px !important;
+    padding: 2px 55px !important;
+  }
+  .login-btn {
+    padding: 0 !important;
+    margin: 15px 0 !important;
+    font-size: 16px !important;
+  }
+  .dropdown-item img {
+    width: 20px !important;
+  }
+  .dropdown-menu {
+    --bs-dropdown-border-color: #fff;
+    margin-left: 25px !important;
+  }
+
+  .nav-link:hover {
+    color: hsl(0, 0%, 41%) !important;
+  }
+  .dropdown-item {
+    margin-top: 8px !important;
+  }
+}
